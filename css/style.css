@@ -11,6 +11,8 @@ body{
     font-size: 18px;
     font-weight: 400;
     color: hsl(227, 10%, 46%);
+    margin: 0;
+    padding: 0;
 }
 
 .dark-bold{
@@ -37,9 +39,12 @@ body{
 }
 
 .profile-card{
-    border: 2px black solid;
     width: 30%;
-    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /*transform: translateX(-50%) translateY(-50%);*/
+    transform: translate(-50%, -50%);
     border-radius: 15px;
     background-color: white;
 }
@@ -49,11 +54,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 8rem;
-    border: 2px red solid;
+    border-radius: 15px 15px 0 0;
 }
 
 .personal-info{
-    border: 2px green solid;
     text-align: center;
     margin-top: -3.5rem;
 }
@@ -65,29 +69,52 @@ body{
 
 .social-stats{
     display: flex;
-	flex-flow: row nowrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     text-align: center;
-    border-top: 2px grey solid;
+    border-top: 1px #f3f3f3 solid;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .stat-labels{
     font-size: 0.75rem;
-    border: 2px black solid;
     margin-top: -1rem;
     margin-bottom: 0;
 }
 
+.top-pattern{
+    width: 65%;
+    margin-top:-30%;
+    margin-left: -20%;
+}
+
+.bottom-pattern{
+    float: right;
+    width: 65%;
+    margin-right: -20%;
+    margin-top: 30%;
+    
+}
+
+.profile-box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-box{
+    height: 100vh;
+    overflow: hidden;
+}
 
 
 
 .attribution { 
-    font-size: 11px; 
     text-align: center; 
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
