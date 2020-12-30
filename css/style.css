@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.dark-bold{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-top: 0;
+}
+
+#age{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+#city{
+    font-size: 0.9rem;
+    margin-top: -0.5rem;
+    
+}
+
+.name{   
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    
+}
+
+.profile-card{
+    border: 2px black solid;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.card-header{
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 8rem;
+    border: 2px red solid;
+}
+
+.personal-info{
+    border: 2px green solid;
+    text-align: center;
+    margin-top: -3.5rem;
+}
+
+.profile-img{
+    border-radius: 50%;
+    border: 3px white solid;
+}
+
+.social-stats{
+    display: flex;
+	flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 2px grey solid;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.stat-labels{
+    font-size: 0.75rem;
+    border: 2px black solid;
+    margin-top: -1rem;
+    margin-bottom: 0;
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
